@@ -1,0 +1,16 @@
+<%- layout("layouts/main") %>
+
+<h1>Edit Article</h1>
+
+<form method="post">
+	<label for="title">Article Title</label>
+	<br/>
+	<input type="text" name="title" id="title" value="<%= article.title %>"/>
+	<br/>
+	<label for="body">Body</label>
+	<br/>
+	<textarea name="body"><%= article.body %></textarea>
+	<br/>
+	<button>Post</button>
+</form>
+

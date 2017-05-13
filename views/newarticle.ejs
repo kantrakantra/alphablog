@@ -1,0 +1,15 @@
+<%- layout("layouts/main") %>
+
+<h1>Create New Article</h1>
+
+<form method="post">
+	<label for="title">Article Title</label>
+	<br/>
+	<input type="text" name="title" id="title" required maxlength="20" minlength="1"/>
+	<br/>
+	<label for="body">Body</label>
+	<br/>
+	<textarea name="body" required maxlength="140" minlength="1"></textarea>
+	<br/>
+	<button>Post</button>
+</form>

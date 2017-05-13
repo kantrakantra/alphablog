@@ -1,0 +1,7 @@
+<%- layout("layouts/main")%>
+
+<h1 class="header">Recent</h1>
+
+<% for (var i = 0; i < articles.length; i++) { %>
+	<h1><a href="/article/<%= articles[i]._id%>" class="pulsate"><%= "• " + articles[i].title %></a></h1>
+<% } %>

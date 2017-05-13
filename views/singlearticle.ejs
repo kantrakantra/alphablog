@@ -1,0 +1,19 @@
+<%- layout("layouts/main") %>
+
+
+<h3 class="singlearticletitle">
+
+	<%= article.title%>
+
+</h3>
+
+<h1 class="singlearticlebody">
+
+	<%= article.body%>
+
+</h1>
+
+<a href="/article/<%= article._id%>/edit" class="editarticle">Edit</a>
+
+<a href="/article/<%= article._id%>/delete" class="deletearticle">Delete</a>
+
